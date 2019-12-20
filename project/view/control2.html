@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- AWP_In_Variable Name='"Labview_ON"' -->
+<!-- AWP_In_Variable Name='"Labview_OFF"' -->
+<!-- AWP_In_Variable Name='"Labview_Reset"' -->
+<!-- AWP_In_Variable Name='"BIT_TAM"' -->
+<!-- AWP_In_Variable Name='"SL_SP"' -->
+<!-- AWP_In_Variable Name='"SL_BC"' -->
+<!-- AWP_In_Variable Name='"SL_Logo"' -->
+<!-- AWP_In_Variable Name='"SL_Vat"' -->
+
+<html lang="vi">
+
+<head>
+	<!-- <style>
+	#den-xanh-1{
+	display: none;
+	</style>
+	
+	<style>
+	#den-do-1{
+	display: none;
+	</style>		-->
+	<title>DATN 2019</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="icon.png">
+	<link href="style_DATN.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+		function gettime() {
+			setInterval(function () {
+				d = new Date();
+				n = d.toLocaleString();
+				document.getElementById("time").innerHTML = n;
+				thoigian = n;
+
+			}, 1000);
+		}
+
+		function loaded_control(argument) {
+			gettime();
+		}
+	</script>
+</head>
+
+<body onload="loaded_control()">
+	<div id="main">
+		<div id="head">
+			<div id="head_logo">
+				<img src="icon.png" style="margin-left: 5px; margin-top: 10px;" />
+			</div>
+
+			<div id="head_text">
+				<h3 style="text-align:center; color:blue;">TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT TP. HCM </h3>
+				<h2 style="text-align:center; color:blue;">ĐỒ ÁN TỐT NGHIỆP </h2>
+				<h1 style="text-align:center; color:red;">KIỂM TRA SẢN PHẨM ỨNG DỤNG XỬ LÝ ẢNH TRONG LABVIEW</h1>
+				<h3 style="text-align:center; color:green;">GVHD: VŨ VĂN PHONG - SVTH: NGUYỄN VĂN MINH 15142073, THIỀU
+					QUANG NGHĨA 15142079</h3>
+			</div>
+
+		</div>
+
+		<div id="head-link">
+			<ul>
+				<li><a href="/">HOME</a></li>
+				<li><a href="/detail">DETAIL</a></li>
+				<li><a href="#" style="color:yellow">CONTROL</a></li>
+				<li><a href="/help">HELP</a></li>
+			</ul>
+
+		</div>
+
+		<div id="content">
+			<div id="control-content-table-1-1">
+				<div id="control-table" style="text-align: center;">
+					<table width="124" height="65" border="5px" align="center" cellpadding="10px" cellspacing="10px"
+						bgcolor="b3d9ff">
+						<tr>
+							<form>
+								<td width="20"><input type="submit" value="Start">
+
+									<input type="hidden" name='"BIT_TAM"' value="1">
+							</form>
+
+							<form>
+								<td width="20"><input type="submit" value="Stop">
+
+									<input type="hidden" name='"BIT_TAM"' value="0">
+							</form>
+
+							<form>
+								<td width="20"><input type="submit" value="Reset">
+									<input type="hidden" name='"Labview_Reset"' value="1">
+
+							</form>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div id="control-content-table-1-2">
+				<div id="control-table" style="text-align: center;">
+					<table height="80" border="2" align="center" cellpadding="6px" cellspacing="7px" bgcolor="white">
+						<tr height="10" width="400" align="center" bgcolor="b3d9ff">
+							<td width="27">ĐÈN BÁO</td>
+						</tr>
+						<tr height="16" width="400" align="center">
+							<td class="static_field_small">
+								<form>
+									<div style="display: none" id="den-xanh-1"><img src="blue.jpg" width="50px"
+											height="50px" align="middle"></div>
+									<div style="display: none" id="den-do-1"><img src="red.jpg" width="50px"
+											height="50px" align="middle"></div>
+								</form>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<center>
+				<h3 align="center">
+					<font size="6"> BẢNG CẬP NHẬT DỮ LIỆU </font>
+				</h3>
+				<table border="1" cellspacing="0" cellpadding="0">
+					<tr height="50" align="center">
+						<td width="150">Lỗi sản phẩm</td>
+						<td width="150">Lỗi Barcode</td>
+						<td width="150">Lỗi Logo</td>
+						<td width="150">Tổng sản phẩm</td>
+					</tr>
+					<tr height="50" align="center">
+						<td width="150">:="SL_SP":</td>
+						<td width="150">:="SL_BC":</td>
+						<td width="150">:="SL_Logo":</td>
+						<td width="150">:="SL_Vat":</td>
+					</tr>
+				</table>
+			</center>
+		</div>
+		<div id="right">
+			<H3>Hôm nay:<p id="time" style="text-align:center"></p>
+			</H3>
+			<hr>
+			<h4>Hướng dẫn</h4>
+			<p>Bước 1: Bắt đầu/ kết thúc điều khiển bằng cách nhấn nút START/STOP</p>
+			<p>Bước 2: Các thông số Lỗi sản phẩm, Lỗi Barcode, Lỗi Logo sẽ được truyền lên Web</p>
+			<p>Bước 3: Nhấn nút Reset để reset các giá trị về giá trị ban đầu</p>
+
+		</div>
+
+		<div id="footer">
+
+			<table>
+				  <tr>
+					    <td width="800"> NGUYỄN VĂN MINH </td>
+					<td> THIỀU QUANG NGHĨA </td>
+					 
+				</tr>
+				<tr>
+					<td width="800">Số điện thoại: 0908-120-803</td>
+					<td>Số điện thoại: 0368-978-037</td>
+				</tr>
+				<tr>
+					<td width="800">Email: ngxvanminh@gmail.com</td>
+					<td>Email: quangnghia567@gmail.com</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<script>
+		if (: = "Bang_tai": == 1) {
+			document.getElementById("den-xanh-1").style.display = "block"; // hình tròn 1 sẽ hiện lên 
+			document.getElementById("den-do-1").style.display = "none"; // hình tròn 2 sẽ mất 
+		} else {
+			document.getElementById("den-xanh-1").style.display = "none"; // hình tròn 1 sẽ mất 
+			document.getElementById("den-do-1").style.display = "block"; // hình tròn 2 sẽ hiện lên
+		}
+	</script>
+</body>

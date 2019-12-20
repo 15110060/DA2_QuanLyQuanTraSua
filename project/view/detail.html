@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<title>DATN 2019</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="icon.png">
+	<link href="style_DATN.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+	<div id="main">
+		<div id="head">
+			<div id="head_logo">
+
+				<img src="icon.png" style="margin-left: 5px; margin-top: 10px;" />
+			</div>
+
+			<div id="head_text">
+				<h3 style="text-align:center; color:blue;">TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT TP. HCM </h3>
+				<h2 style="text-align:center; color:blue;">ĐỒ ÁN TỐT NGHIỆP </h2>
+				<h1 style="text-align:center; color:red;">KIỂM TRA SẢN PHẨM ỨNG DỤNG XỬ LÝ ẢNH TRONG LABVIEW</h1>
+				<h3 style="text-align:center; color:green;">GVHD: VŨ VĂN PHONG - SVTH: NGUYỄN VĂN MINH 15142073, THIỀU
+					QUANG NGHĨA 15142079</h3>
+			</div>
+
+		</div>
+
+		<div id="head-link">
+			<ul>
+				<li><a href="/">HOME</a></li>
+				<li><a href="#" style="color:yellow">DETAIL</a></li>
+				<li><a href="/control">CONTROL</a></li>
+				<li><a href="/help">HELP</a></li>
+			</ul>
+
+		</div>
+		<div id="detail_content" style="text-align:justify">
+			<div id="detail_content_1">
+				<h1 style="color:green"> Lý do chọn đề tài </h1>
+				<p>Trong nước:
+					<ul>
+						<li>Việc nhận dạng và phân loại sản phẩm bằng xử lý ảnh ở nước ta đang ngày càng phổ biến, được
+							ứng dụng nhiều trong công nghiệp như:
+							nhận dạng và phân loại chất lượng gạch men, đếm số lượng linh kiện điện tử, phát hiện lỗi
+							trên bo mạch,…Trong đời sống như đếm số lượng
+							cá giống, nhận dạng biển số xe,…
+					</ul>
+					Ngoài nước:
+					<ul>
+						<li>Trên thế giới từ nông nghiệp đến công nghiệp, những công việc từ đơn giản đến phức tạp hầu
+							hết đều đã ứng dụng tự động hóa.
+						<li>Trong lĩnh vực nhận dạng và phân loại cũng đã có nhiều những thiết bị chuyên dùng như đầu
+							đọc mã vạch, các hệ thống chuyên dùng sử dụng Camera có độ phân giải cao để nhận dạng.
+						<li>Các lĩnh vực ứng dụng: hệ thống phân loại thư từ, phân loại hành lý theo mã vạch trong sân
+							bay, phân loại và quản lý chất lượng sản phẩm trong sản xuất công nghiệp
+					</ul>
+				</p>
+				<h1 style="color:green"> Chi tiết đồ án </h1>
+				<p>Trong hệ thống có 3 xi lanh để phân loại sản phẩm lỗi theo thứ tự ưu tiên: Lỗi sản phẩm, lỗi Barcode
+					và lỗi Logo.
+					<ul>
+						<li>Nhấn nút START động cơ kéo tải hoạt động.
+						<li>Sản phẩm được băng tải đưa tới Camera thu hình, tại đây Camera thứ nhất đọc số lượng sản
+							phẩm có trong hộp, Camera thứ hai đọc mã Barcode và hình ảnhLogo. Tín hiệu hình ảnh được
+							truyền về máy tính thông qua phần mềm Labview.
+						<li>Hệ thống phân loại: Tín hiệu sau xử lý ở Labview được truyền về PLC. Khi sản phẩm đi qua vị
+							trí cảm biến, cảm biến đưa tín hiệu về PLC, PLC xuất tín hiệu điều khiển xylanh đẩy sản phẩm
+							vào rãnh trượt.
+						<li>Nhấn nút STOP, hệ thống sẽ dừng lại.
+						<li>Khi có sự cố thì nút Emergency Stop hoạt động để dừng hệ thống.
+					</ul>
+				</p>
+			</div>
+
+			<div id="detail_content_2">
+				<br></br>
+				<img src="detail_1.jpg">
+				<br></br>
+				<img src="detail_2.jpg">
+			</div>
+			<marquee> ĐỒ ÁN TỐT NGHIỆP 2019 - NGUYỄN VĂN MINH 15142073, THIỀU QUANG NGHĨA 15142079</marquee>
+		</div>
+
+		<div id="footer">
+
+			<table>
+				  <tr>
+					    <td width="800"> NGUYỄN VĂN MINH </td>
+					<td> THIỀU QUANG NGHĨA </td>
+					 
+				</tr>
+				<tr>
+					<td width="800">Số điện thoại: 0908-120-803</td>
+					<td>Số điện thoại: 0368-978-037</td>
+				</tr>
+				<tr>
+					<td width="800">Email: ngxvanminh@gmail.com</td>
+					<td>Email: quangnghia567@gmail.com</td>
+				</tr>
+			</table>
+		</div>
+	</div>
